@@ -20,6 +20,6 @@
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow id="DAYPAY AI Agent" anchor="right"
                     factoryClass="com.daypaytechnologies.agent.MyToolWindowFactory"
-                    icon="/icons/pluginIcon.svg"/>
+                    icon="/icons/agentIcon.svg"/>
     </extensions>
 </idea-plugin>
