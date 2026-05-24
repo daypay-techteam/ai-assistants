@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>com.daypaytechnologies.agent</id>
+    <name>DAYPAY Technologies</name>
+    <vendor email="daypaytechteam@gmail.com">
+        DAYPAY Technologies LLP
+    </vendor>
+    <description>
+        AI assistant similar to GitHub Copilot.
+    </description>
+    <depends>com.intellij.modules.platform</depends>
+    <actions>
+        <action id="AskAIAction"
+                class="com.daypaytechnologies.agent.actions.AskAIAction"
+                text="Ask AI"
+                description="Send code to AI assistant">
+            <!-- This puts it into right-click editor menu -->
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="DAYPAY AI Agent" anchor="right"
+                    factoryClass="com.daypaytechnologies.agent.MyToolWindowFactory"
+                    icon="/icons/pluginIcon.svg"/>
+    </extensions>
+</idea-plugin>

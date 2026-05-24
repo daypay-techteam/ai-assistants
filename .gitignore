@@ -154,3 +154,6 @@ pids/
 # ==========================================
 
 *.local
+
+# IntelliJ Platform plugin sandbox/cache
+.intellijPlatform/
